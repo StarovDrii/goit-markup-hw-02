@@ -63,9 +63,11 @@ body {
   text-transform: uppercase;
   color: var(--elements-color);
 }
+.header-list-item:hover,
+.header-list-item:focus,
 .header-list-item:active {
-  color: #4d5ae5;
   text-decoration: underline;
+  color: #404bbf;
 }
 
 .header-address {
@@ -85,8 +87,8 @@ body {
 .header-address-item:hover,
 .hederr-address-item:focus,
 .header-address-item:active {
- color: #404bbf
-text-decoration: underline;
+  text-decoration: underline;
+  color: #404bbf;
 }
 /*-------------------------MAIN-----------------------*/
 /*----------------HERO----------------*/
@@ -178,6 +180,7 @@ text-decoration: underline;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   text-align: center;
   color: var(--elements-color);
 }
