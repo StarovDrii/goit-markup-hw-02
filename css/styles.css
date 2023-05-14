@@ -3,6 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #434455;
+  background-color: #ffffff;
 }
 
 .list {
@@ -33,7 +34,6 @@ body {
 }
 
 .header {
-  background-color: #ffffff;
 }
 
 .header-navigation {
@@ -45,11 +45,11 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--elements-color);
+  color: #4d5ae5;
 }
 
 .header-logo {
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 
 .header-navigation-list {
@@ -59,6 +59,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-transform: uppercase;
   color: var(--elements-color);
 }
 .header-list-item:active {
@@ -97,10 +98,18 @@ body {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #ffffff;
 }
 
 .hero-button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
   background: #4d5ae5;
   cursor: pointer;
 }
@@ -147,8 +156,10 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
   color: var(--elements-color);
 }
 .projects-list {
@@ -161,11 +172,16 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--elements-color);
 }
 .team-list {
+}
+
+.team-list-item {
+  background-color: #ffffff;
 }
 
 .team-list-title {
@@ -174,6 +190,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--elements-color);
 }
 .team-text {
@@ -224,11 +241,12 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #f4f4fd;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 
 .footer-logo {
-  color: #4d5ae5;
+  color: #f4f4fd;
 }
 
 .footer-text {
