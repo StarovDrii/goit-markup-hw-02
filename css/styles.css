@@ -64,8 +64,7 @@ body {
   color: var(--elements-color);
 }
 .header-list-item:hover,
-.header-list-item:focus,
-.header-list-item:active {
+.header-list-item:focus {
   text-decoration: underline;
   color: #404bbf;
 }
@@ -85,8 +84,7 @@ body {
   color: #434455;
 }
 .header-address-item:hover,
-.hederr-address-item:focus,
-.header-address-item:active {
+.header-address-item:focus {
   text-decoration: underline;
   color: #404bbf;
 }
@@ -208,6 +206,8 @@ body {
 /*----------------PORTFOLIO----------------*/
 
 .filters-button {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -235,6 +235,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
 }
 /*----------------------------------FOOTER----------------*/
 
