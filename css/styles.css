@@ -1,9 +1,7 @@
 body {
-  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--text);
+  background-color: var(--white-background);
 }
 
 .list {
@@ -30,7 +28,18 @@ body {
 }
 
 :root {
-  --elements-color: #2e2f42;
+  --primary-brand: #4d5ae5; /*IRIS*/
+  --pressed-state: #404bbf; /*OCEAN*/
+  --dark: #2e2f42; /*NAVY BLUE*/
+  --success: #31d0aa; /*GREEN*/
+  --text: #434455; /*SLATE*/
+  --subtle-text: #8e8f99; /*LIGHT SLATE*/
+  --accent: #e7e9fc; /*CORNFLOWER*/
+  --light: #f4f4fd; /*CLOUD*/
+  --modal-overlay: rgba(46, 47, 66, 0.4); /*NAVY BLUE modal*/
+  --hero-background: rgba(46, 47, 66, 0.7); /*GREY*/
+  --white-background: #ffffff; /*WHITE*/
+  --modal-background: #fcfcfc; /*DAIRY*/
 }
 
 .header {
@@ -46,11 +55,11 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--primary-brand);
 }
 
 .header-logo {
-  color: #2e2f42;
+  color: var(--dark);
 }
 
 .header-navigation-list {
@@ -60,13 +69,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--elements-color);
+  color: var(--dark);
 }
 .header-list-item:hover,
 .header-list-item:focus {
-  text-decoration: underline;
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 
 .header-address {
@@ -76,33 +83,29 @@ body {
 .header-address-list {
 }
 .header-address-item {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text);
 }
 .header-address-item:hover,
 .header-address-item:focus {
-  text-decoration: underline;
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 /*-------------------------MAIN-----------------------*/
 /*----------------HERO----------------*/
 
 .hero {
-  background-color: var(--elements-color);
+  background-color: var(--dark);
 }
 
 .hero-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #ffffff;
+  color: var(--white-background);
 }
 
 .hero-button {
@@ -112,23 +115,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #4d5ae5;
+  color: var(--white-background);
+  background-color: var(--primary-brand);
   cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus,
 .hero-button:active {
-  background: #404bbf;
-}
-
-.hero-button-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
+  background-color: var(--pressed-state);
 }
 /*----------------Why-are-we-section----------------*/
 .why-are-we {
@@ -138,12 +133,11 @@ body {
 }
 
 .why-are-we-list-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--elements-color);
+  color: var(---dark);
 }
 
 .why-are-we-text {
@@ -156,47 +150,44 @@ body {
 }
 
 .projects-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--elements-color);
+  color: var(--dark);
 }
 
 .projects-list {
 }
 /*----------------TEAM----------------*/
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--light);
 }
 .team-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  color: var(--elements-color);
+  color: var(--dark);
 }
 .team-list {
 }
 
 .team-list-item {
-  background-color: #ffffff;
+  background-color: var(--white-background);
 }
 
 .team-list-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--elements-color);
+  color: var(--dark);
 }
 .team-text {
   font-size: 16px;
@@ -212,35 +203,34 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background-color: #f4f4fd;
+  color: var(--primary-brand);
+  background-color: var(--light);
 }
 .filters-button:hover,
 .filters-button:focus {
-  background-color: #404bbf;
-  color: #ffffff;
+  background-color: var(--pressed-state);
+  color: var(--white-background);
   cursor: pointer;
 }
 
 .project-card-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--elements-color);
+  color: var(--dark);
 }
 
 .project-card-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text);
 }
 /*----------------------------------FOOTER----------------*/
 
 .footer {
-  background-color: var(--elements-color);
+  background-color: var(--dark);
 }
 
 .footer-link {
@@ -250,16 +240,16 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--primary-brand);
 }
 
 .footer-logo {
-  color: #f4f4fd;
+  color: var(--light);
 }
 
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--light);
 }
